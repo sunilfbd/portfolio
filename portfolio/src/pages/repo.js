@@ -8,7 +8,11 @@ const MyRepos = () => {
     <HomePageLayout>
         <h1>My Repositories</h1>
         <p>List of Repositories goes here</p>
-        <RightAside/>
+
+        <RightAside>
+            ASIDE FROM REPOSITORY PAGE
+        </RightAside>
+        
     </HomePageLayout>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RightAside = () => {
+const RightAside = (props) => {
     return (
         <aside>
-            right asidee
+            {props.children}
         </aside>
     )
 }

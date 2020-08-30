@@ -1,9 +1,9 @@
 import React from 'react'
 
-function LeftAside() {
+function LeftAside(props) {
     return (
         <aside>
-            left Aside
+            {props.children}
         </aside>
     )
 }

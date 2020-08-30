@@ -1,0 +1,15 @@
+@import '../core/variables.scss';
+
+body {
+    background-color: $pimary-grey-bg;
+    font-size: 75%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.container {
+    width: 80vw;
+    min-height: 80vh;
+    margin: 5vh auto;
+    padding: 20px;
+    background-color: $primary-white;
+}
