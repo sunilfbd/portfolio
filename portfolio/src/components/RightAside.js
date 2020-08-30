@@ -2,7 +2,7 @@ import React from 'react'
 
 const RightAside = (props) => {
     return (
-        <aside>
+        <aside className="port-right-aside">
             {props.children}
         </aside>
     )

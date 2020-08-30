@@ -13,3 +13,46 @@ body {
     padding: 20px;
     background-color: $primary-white;
 }
+
+.port-blog-item {
+    margin: 15px 0;
+    background-color: #f1f1f1;
+    padding: 20px;
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .port-blog-item-date {
+        margin: 0 20px 0 0; 
+        display: inline-block;
+        font-style: oblique;
+    }
+
+    .port-blog-item-author {
+        font-weight: 700;
+    }
+
+    .blog-item-detail {
+        margin-top: 10px;
+    }
+}
+
+.port-right-aside {
+    float: right;
+    width: 25%;
+    background-color: yellow;
+    padding: 10px;
+
+}
+
+.port-content-wrapper {
+    width: 70%;
+    float: left;
+}
