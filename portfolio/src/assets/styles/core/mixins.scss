@@ -1,0 +1,16 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: -999%;
+  top: -999%;
+  font-size: 0;
+}
