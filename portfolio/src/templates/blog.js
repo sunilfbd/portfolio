@@ -1,6 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import styled from 'styled-components';
+import { h1 } from '../StyledElements/Title'
+
 
 import HomePageLayout from '../layouts/HomePageLayout'
 import RightAside from '../components/RightAside'
