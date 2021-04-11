@@ -1,9 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import styled from 'styled-components';
-import { h1 } from '../StyledElements/Title'
-
+import Title  from '../StyledElements/Title'
 
 import HomePageLayout from '../layouts/HomePageLayout'
 import RightAside from '../components/RightAside'
@@ -22,15 +20,12 @@ query (
     }
   }
 `
-
-
 const BlogDetail = (props) => {
     return (
         <HomePageLayout>
             <div>
-                <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                <Title>{props.data.markdownRemark.frontmatter.title}</Title>
                 <span>{props.data.markdownRemark.frontmatter.author}</span>
-                <span>{props.data.markdownRemark.frontmatter.title}</span>
                 <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
             </div>
             <RightAside className="port-right-aside">
