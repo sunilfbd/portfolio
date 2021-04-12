@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
+import {Navigation, NavigationItem} from '../StyledElements/Navigation'
 import '../assets/styles/components/header.scss'
 
 const Header = () => {
@@ -32,14 +33,14 @@ const Header = () => {
         </div>
 
 
-        <nav className="port-nav-list">
-            <li className="port-nav-list-item">
+        <Navigation className="port-nav-list">
+            <NavigationItem className="port-nav-list-item">
                 <Link activeClassName="port-nav-item-link-active" className="port-nav-item-link" to="/blog">Blog</Link>
-            </li>
-            <li className="port-nav-list-item">
+            </NavigationItem>
+            <NavigationItem className="port-nav-list-item">
                 <Link activeClassName="port-nav-item-link-active" className="port-nav-item-link" to="/repo">Repositories</Link>
-            </li>
-        </nav>
+            </NavigationItem>
+        </Navigation>
     </header>
   )
 }
