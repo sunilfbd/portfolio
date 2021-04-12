@@ -7,9 +7,7 @@ import HomePageLayout from '../layouts/HomePageLayout'
 import RightAside from '../components/RightAside'
 
 export const query = graphql`
-query (
-    $slug: String!
-    ){
+query ($slug: String!){
     markdownRemark(fields: {slug: {eq: $slug}}) {
       frontmatter {
         author
