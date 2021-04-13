@@ -4,7 +4,8 @@ const GlobalStyles = createGlobalStyle`
     body {
         background-color: #fffef2;
         font-size: 75%;
-        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-family: Georgia, 'Trebuchet MS', sans-serif,  Arial;
+        color: #666666;
     }
 
     .container{
@@ -15,19 +16,22 @@ const GlobalStyles = createGlobalStyle`
 
     h1 {
         font-size: 36px;
-        color: #666;
     }
 
     h2 {
         font-size: 24px;
-        color: #222;
     }
 
     p {
         margin: 10px 0;
-        color: #333;
         font-size: 18px;
         line-height: 1.5;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding-top: 5px;
+        border-top: 1px solid #ddd;
     }
 `;
 
