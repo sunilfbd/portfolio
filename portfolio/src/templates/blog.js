@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Title  from '../StyledElements/Title'
+import LeftContent from '../StyledElements/LeftContent'
 
 import HomePageLayout from '../layouts/HomePageLayout'
 import RightAside from '../components/RightAside'
@@ -24,7 +25,7 @@ const BlogDetail = (props) => {
             <div>
                 <Title>{props.data.markdownRemark.frontmatter.title}</Title>
                 <span>{props.data.markdownRemark.frontmatter.author}</span>
-                <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+                <LeftContent dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></LeftContent>
             </div>
             <RightAside className="port-right-aside">
                 ASIDE FROM BLOG PAGE

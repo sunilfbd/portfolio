@@ -2,6 +2,7 @@ import React from "react"
 
 import { graphql, Link, useStaticQuery } from "gatsby"
 
+import BlogListItem from '../StyledElements/BlogListItem'
 import HomePageLayout from '../layouts/HomePageLayout'
 import RightAside from '../components/RightAside'
 
@@ -28,9 +29,6 @@ const data = useStaticQuery(graphql`
     }
 }`
 )
-
-
-    console.log(data);
     return (
         <HomePageLayout>
             <div className="port-content-wrapper">
@@ -38,7 +36,7 @@ const data = useStaticQuery(graphql`
                 {
                     data.allMarkdownRemark.edges.map((edge) => {
                         return (
-                            <section className="port-blog-item">
+                            <BlogListItem className="port-blog-item">
                                 <Link to={`/blog/${edge.node.fields.slug}`}>
                                     <h2>{edge.node.frontmatter.title}</h2>
                                     <p>{edge.node.frontmatter.description}</p>
@@ -47,7 +45,7 @@ const data = useStaticQuery(graphql`
                                     <span className="port-blog-item-date">written on: {edge.node.frontmatter.date}</span>
                                     <span className="port-blog-item-author">Author: {edge.node.frontmatter.author}</span>
                                 </div>
-                            </section>
+                            </BlogListItem>
                         )
                     })
                 }
