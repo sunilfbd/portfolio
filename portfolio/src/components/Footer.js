@@ -1,25 +1,24 @@
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
-
-import '../assets/styles/components/footer.scss'
+// import { graphql, useStaticQuery } from "gatsby"
+import {CopyRightWrapper, FooterWrapper} from '../StyledElements/Footer'
 
 export default function Footer() {
 
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    author
-                        description
-                    title
-                }
-            }
-        }`
-    )
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         site {
+    //             siteMetadata {
+    //                 author
+    //                     description
+    //                 title
+    //             }
+    //         }
+    //     }`
+    // )
 
     return (
-        <footer className="port-footer">
-            <p>&copy; all copyright reserved with {data.site.siteMetadata.author}</p>
-        </footer>
+        <FooterWrapper className="port-footer">
+            <CopyRightWrapper>&copy; all copyright reserved</CopyRightWrapper>
+        </FooterWrapper>
     )
 }
